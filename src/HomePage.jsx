@@ -1,11 +1,7 @@
-// Pro-Fit Wellness Solutions - Website Root
-// React + Tailwind site with sections for Home, About, Services, Forms, and Booking
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CalendarDays, Dumbbell, Contact, Star } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
@@ -14,8 +10,7 @@ export default function HomePage() {
       <section className="text-center space-y-4">
         <h1 className="text-4xl font-bold">Pro-Fit Wellness Solutions</h1>
         <p className="text-lg max-w-xl mx-auto">
-          Personalized fitness & nutrition coaching. Engineer your health with
-          precision.
+          Personalized fitness & nutrition coaching. Engineer your health with precision.
         </p>
         <Button className="text-lg px-6 py-2">Get Started</Button>
       </section>
@@ -23,21 +18,21 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card>
-          <CardContent className="space-y-2">
+          <CardContent>
             <Dumbbell className="w-8 h-8" />
             <h2 className="text-xl font-semibold">Training Programs</h2>
             <p>Custom workout plans tailored to your goals and schedule.</p>
           </CardContent>
         </Card>
         <Card>
-          <CardContent className="space-y-2">
+          <CardContent>
             <Contact className="w-8 h-8" />
             <h2 className="text-xl font-semibold">Nutrition Coaching</h2>
             <p>Macro-based meal guidance with flexible food logging support.</p>
           </CardContent>
         </Card>
         <Card>
-          <CardContent className="space-y-2">
+          <CardContent>
             <CalendarDays className="w-8 h-8" />
             <h2 className="text-xl font-semibold">Bi-weekly Follow-ups</h2>
             <p>One-on-one sessions to adjust plans, review progress, and motivate.</p>
@@ -74,14 +69,14 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold mb-4">Client Testimonials</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <CardContent className="space-y-2">
+            <CardContent>
               <Star className="w-6 h-6 text-yellow-400" />
               <p>“Working with Oktay changed my life. His tailored plan helped me lose 10kg and gain confidence.”</p>
               <p className="text-sm text-gray-500">– Sarah D.</p>
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="space-y-2">
+            <CardContent>
               <Star className="w-6 h-6 text-yellow-400" />
               <p>“Professional, precise, and inspiring. I’ve never felt more motivated to stick to a plan.”</p>
               <p className="text-sm text-gray-500">– Marc B.</p>
